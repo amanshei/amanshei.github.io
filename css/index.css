@@ -87,9 +87,13 @@ canvas {
 
 .left {
     position: absolute;
-    top: 8px;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+/*    top: 8px;
     left: 16px;
-    font-size: 0.9em;
+*/
+    font-size: 0.8em;
 }
 
 img {

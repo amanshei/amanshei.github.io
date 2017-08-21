@@ -88,8 +88,46 @@ We investigate star formation in DLSCL J0916.2+2953, a dissociative merger of tw
 <a class="papertitle" href="https://search.proquest.com/docview/1879433432">Star Formation in Merging Clusters of Galaxies
 </a>.
 ProQuest Dissertations And Theses; Thesis (Ph.D.)--University of California, Davis, 2016.; Publication Number: AAT 10246800; ISBN: 9781369616767; Source: Dissertation Abstracts International, Volume: 78-08(E), Section: B.; 111 p.
-<!-- 
+
+<p>What does an observational cosmologist do? Cosmology research is at the nexus between theoretical math and physics, but observational cosmology introduces the additional challenge of physically and statistically motivating each step then interpreting results. You could say, this is where it gets real. You can take every math and physics course under the Sun (ahem) but nothing prepares you for being a scientist like answering a question no one has asked before in a way no one has tried, starting from scratch then getting your results published in a peer reviewed journal. My adviser Dr. Lubin and colleague Dr. Lemaux showed me the importance of collaboration and mentorship in this process. Being an observational cosmologist is not just solving equations on a chalkboard, but teaching yourself the programming languages and statistics you need to get answers from the data with your own two hands (I call this nerd street smarts). So you need to know what galaxies look like? Learn to use a telescope. So you need to extract meaning from the data? Make a model that tests your hypothesis. So you think you discovered something big? Learn how to make plots to visualize the data and get your point across. Then, go back to the drawing board if the question you asked cannot be answered with the confidence to warrant a discovery.
+
+I will make a list of examples of some of the blood-and-sweat statistical questions we encountered along the way (coming soon).</p>
+
+<!--
+A few examples of things that kept us on our toes along the way, in observational cosmology:
+How to select objects to target with a telescope based on incomplete or inconsistent data sets
+-ex red gal bias
+-diff wavelenghts
+
+Not only do we have to deal with statistical and instrumental noise and selection bias associated with making observations and picking a sample (picking objects to observe) and observing (). We encounter having to combine data sets where different sampling methods were used with different threshholds and different wavelengths which peak based on different physical observables from the same type of objects. For example, looking at the radio flux from a galaxy in a cluster of galaxies and comparing it with optical emission lines taken of some of the same galaxies. We have to deal with 
+
+We deal with false negatives, false positives, often our data sets are small data sets
+</p> 
+<ul>
+<li>
+Cleaning our sample so that we are comparing data from areas which were equally sampled, or accounting for larger errors if necessary
+</li>
+<li>
+How to quantify a visible, physically motivated difference between two 2D distributions as statistically significant. (KS test, Monte Carlo, resampling)
+</li>
+<li>
+How to bin data for analysis in a way that is physically motivated but also maintains significant enough members to characterize ensemble properties of each bin (for example, in the first versions of the PreGordo python notebook we try rotating the entire sample so we can linearly bin objects).
+</li>
+<li>
+How to deal with outliers when chosing a final sample or fitting for red sequence galaxies.
+</li>
+<li>
+(First paper expecially) How to deal with cluster definitions,
+
+comparing to theoretical and emperical models
+
+
+</li>
+
+
+</ul>
 -->
+
 </li>
 
 </ol>
@@ -101,12 +139,12 @@ ProQuest Dissertations And Theses; Thesis (Ph.D.)--University of California, Dav
   <dd>Some Jupyter notebooks I wrote for some of the analysis for my second paper, where we discovered suppressed star formation in galaxies between two merging clusters at redshift ~1.</dd>
   <dt><a href="https://github.com/amanshei/git_random/"> Snippets </a></dt>
   <dd>Code sample using mplD3 to make useful diagrams so you can rollover a point on a plot to see other features of that object stored in the dataframe (in my case, a galaxy on a color-magnitude plot). I also included a point-in-poly function I wrote that can be used to take an arbitrary number of N sided polygons (directly from DS9 contour file) and classify whether points in a data set are inside or outside of the shape. Outputs Pandas Groupby pickle that can be applied to do many things, as seen in my Jupyter notebooks and cluster_funct file of functions. </dd>
+
 </dl>
 
+
+
 <h2 id="fun">Fun</h2>
-
-
-
 <p>Where am I?</p>
 <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BUfnLcBlQNM/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ali (@astro_ali_)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-24T23:42:56+00:00">May 24, 2017 at 4:42pm PDT</time></p></div></blockquote>
 <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
